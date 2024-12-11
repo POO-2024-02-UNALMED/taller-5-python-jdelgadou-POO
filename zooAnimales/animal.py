@@ -18,7 +18,7 @@ class Animal:
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
-        return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n"+"Aves: " + Ave.cantidadAves() + "\n"+"Reptiles: " + Reptil.cantidadReptiles() + "\n"+"Peces: " + Pez.cantidadPeces() + "\n"+"Anfibios: " + Anfibio.cantidadAnfibios()
+        return f"Mamiferos: {Mamifero.cantidadMamiferos()} \nAves: {Ave.cantidadAves()}\nReptiles: {Reptil.cantidadReptiles()}\nPeces: {Pez.cantidadPeces()}\nAnfibios: {Anfibio.cantidadAnfibios()}"
     
     def __str__(self):
         return "Mi nombre es "+ self.nombre +", tengo una edad de "+ self.edad+", habito en "+self.habitat+" y mi genero es "+self.genero
@@ -54,3 +54,11 @@ class Animal:
         
     def getZona(self):
         return self.zona
+    
+    def getEdad(self):
+        return self.edad
+    
+    def setEdad(self, e):
+        self.edad=e
+        
+    

@@ -38,3 +38,6 @@ class Ave(Animal):
         
     def getColorPlumas(self):
         return self._colorPlumas
+    
+    def toString(self):
+        super().__str__()
