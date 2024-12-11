@@ -40,5 +40,4 @@ class Ave(Animal):
         return self._colorPlumas
     
     def toString(self):
-        return self
-    
+        return self.__str__()
