@@ -14,14 +14,14 @@ class Pez(Animal):
     def movimiento(self):
         return "nadar"
     @classmethod
-    def crearSalmon(self,x,y,z):
+    def crearSalmon(cls,x,y,z):
         a=Pez(x, y, "oceano", z, "rojo", 6)
-        salmones+=1
+        cls.salmones+=1
         return a
     @classmethod
-    def crearBacalao(self,x,y,z):
+    def crearBacalao(cls,x,y,z):
         a=Pez(x, y, "oceano", z, "gris", 6)
-        bacalaos+=1
+        cls.bacalaos+=1
         return a
     
     @classmethod

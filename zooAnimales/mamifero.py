@@ -12,14 +12,14 @@ class Mamifero(Animal):
     def cantidadMamiferos(cls):
         return len(cls._listado)
     @classmethod
-    def crearCaballo(self,x,y,z):
+    def crearCaballo(cls,x,y,z):
         a=Mamifero(x, y, "pradera", z, True, 4)
-        caballos+=1
+        cls.caballos+=1
         return a
     @classmethod
-    def crearLeon(self,x,y,z):
+    def crearLeon(cls,x,y,z):
         a=Mamifero(x, y, "selva", z, True, 4)
-        leones+=1
+        cls.leones+=1
         return a
     
     @classmethod

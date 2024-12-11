@@ -14,14 +14,14 @@ class Reptil(Animal):
     def movimiento(self):
         return "reptar"
     @classmethod
-    def crearIguana(self,x,y,z):
+    def crearIguana(cls,x,y,z):
         a=Reptil(x, y, "humedal", z, "verde", 3)
-        iguanas+=1
+        cls.iguanas+=1
         return a
     @classmethod
-    def crearSerpiente(self,x,y,z):
+    def crearSerpiente(cls,x,y,z):
         a=Reptil(x,y,"jungla",z,"blanco",1)
-        serpientes+=1
+        cls.serpientes+=1
         return a
     
     @classmethod
@@ -43,3 +43,4 @@ class Reptil(Animal):
         
     def getLargoCola(self):
         return self._largoCola
+    
